@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Happy Birthday</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body { background:#f5efe6; color:#5a2a83; }
+<div style="padding:15px; text-align:center; background:#eee;">
+  <a href="index.html">Home</a> |
+  <a href="Letter.html">Letter</a> |
+  <a href="Gallery.html">Gallery</a> |
+  <a href="Secret.html">Secret</a>
+</div>
+<div style="padding:15px; text-align:center; background:#eee;">
+  <a href="index.html">Home</a> |
+  <a href="Letter.html">Letter</a> |
+  <a href="Gallery.html">Memories</a> |
+  <a href="Secret.html">Secret</a>
+</div>
+
+</style>
+</head>
+
+<body class="flex flex-col items-center justify-center h-screen text-center">
+
+<h1 class="text-5xl mb-6">Happy Birthday Myyy Bachhaaa 🎂</h1>
+
+<div class="space-y-4">
+  <a href="letter.html" class="block px-6 py-3 bg-purple-500 text-white rounded">💌 Letter</a>
+  <a href="gallery.html" class="block px-6 py-3 bg-purple-500 text-white rounded">📸 Memories</a>
+  <a href="secret.html" class="block px-6 py-3 bg-purple-500 text-white rounded">🔐 Secret</a>
+</div>
+<audio id="bgm" loop>
+  <source src="music2.mp3" type="audio/mpeg">
+</audio>
+
+<div style="position:fixed; bottom:20px; right:20px;">
+  <button onclick="playMusic()" style="padding:10px;">▶️ Play</button>
+  <button onclick="pauseMusic()" style="padding:10px;">⏸ Pause</button>
+</div>
+
+<script>
+function playMusic() {
+  document.getElementById("bgm").play();
+}
+
+function pauseMusic() {
+  document.getElementById("bgm").pause();
+}
+</script></body>
+</html>

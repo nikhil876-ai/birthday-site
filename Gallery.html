@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body { background:#0ff; color:#003333; }
+<div style="padding:15px; text-align:center; background:#eee;">
+  <a href="index.html">Home</a> |
+  <a href="Letter.html">Letter</a> |
+  <a href="Gallery.html">Gallery</a> |
+  <a href="Secret.html">Secret</a>
+</div>
+<div style="padding:15px; text-align:center; background:#eee;">
+  <a href="index.html">Home</a> |
+  <a href="Letter.html">Letter</a> |
+  <a href="Gallery.html">Memories</a> |
+  <a href="Secret.html">Secret</a>
+</div>
+</style>
+</head>
+
+<body class="p-10">
+<a href="#" onclick="history.back()">⬅ Back</a>
+
+<h1 class="text-4xl text-center mb-10">Memories 📸</h1>
+
+<div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+  <img src="Photo1.jpeg" class="rounded-xl">
+  <img src="Photo2.jpeg" class="rounded-xl">
+  <img src="Photo3.jpeg" class="rounded-xl">
+  <img src="Photo4.jpeg" class="rounded-xl">
+  <img src="Photo5.jpeg" class="rounded-xl">
+  <img src="Photo6.jpeg" class="rounded-xl">
+  <img src="Photo7.jpeg" class="rounded-xl">
+  <img src="Photo9.jpeg" class="rounded-xl">
+  <img src="Photo10.jpeg" class="rounded-xl">
+  <img src="Photo11.jpeg" class="rounded-xl">
+  <img src="Photo12.jpeg" class="rounded-xl">
+  <img src="Photo13.jpeg" class="rounded-xl">
+
+<video controls width="400" class="rounded-xl">
+  <source src="video.mp4" type="video/mp4">
+</video>
+<video controls width="400" class="rounded-xl">
+  <source src="video1.mp4" type="video/mp4">
+</video>
+<video controls width="400" class="rounded-xl">
+  <source src="video2.mp4" type="video/mp4">
+</video>
+<video controls width="400" class="rounded-xl">
+  <source src="video3.mp4" type="video/mp4">
+</video>
+
+</div>
+
+<audio id="bgm" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<div style="position:fixed; bottom:20px; right:20px;">
+  <button onclick="playMusic()" style="padding:10px;">▶️ Play</button>
+  <button onclick="pauseMusic()" style="padding:10px;">⏸ Pause</button>
+</div>
+
+<script>
+function playMusic() {
+  document.getElementById("bgm").play();
+}
+
+function pauseMusic() {
+  document.getElementById("bgm").pause();
+}
+</script>
+
+
+</body>
+</html>

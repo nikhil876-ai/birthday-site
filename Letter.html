@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Letter</title>
+<script src="https://cdn.tailwindcss.com"></script>
+<style>
+body { background:#d6c1a3; color:#3e2c23; }
+<div style="padding:15px; text-align:center; background:#eee;">
+  <a href="index.html">Home</a> |
+  <a href="Letter.html">Letter</a> |
+  <a href="Gallery.html">Gallery</a> |
+  <a href="Secret.html">Secret</a>
+</div>
+<div style="padding:15px; text-align:center; background:#eee;">
+  <a href="index.html">Home</a> |
+  <a href="Letter.html">Letter</a> |
+  <a href="Gallery.html">Memories</a> |
+  <a href="Secret.html">Secret</a>
+</div>
+
+</style>
+</head>
+
+<body class="p-10 max-w-3xl mx-auto">
+<a href="#" onclick="history.back()">⬅ Back</a>
+
+<h1 class="text-4xl mb-6 text-center">A Letter For You 💌</h1>
+
+<p class="text-lg leading-8">
+So, you know already am not real good with words... Always been a dumb around them... but I just wanna say that a year ago we were two strangers who just randomly talked and got to know somehow our mother's got same surname... Now I can't imagine my life without you... Am not the best kind of a bada bhai i know... never had someone so young who would get influnced by my actions.... So kind of been trying real hard to be a better person so I can be better inflence to my chotiii siii pyariii siii gudiyaaa siii beti jese behen....
+I love you like one loves thier best friend... as you are my best friend... To me, you are my kid, my sister, my best friend, my partner in crime, someone who makes me want to be better person and long for a  lifetime or two or fuck bro thousands of lifetimes with you... kabhi tu badi behen, kabhi mai bada bhai, kabhi ham twins, but just you and you alone... there's no after or before you... it's just you. I hope waffle tasted good.
+By Vani Bhaya</p>
+
+<audio id="bgm" loop>
+  <source src="music1.mp3" type="audio/mpeg">
+</audio>
+
+<div style="position:fixed; bottom:20px; right:20px;">
+  <button onclick="playMusic()" style="padding:10px;">▶️ Play</button>
+  <button onclick="pauseMusic()" style="padding:10px;">⏸ Pause</button>
+</div>
+
+<script>
+function playMusic() {
+  document.getElementById("bgm").play();
+}
+
+function pauseMusic() {
+  document.getElementById("bgm").pause();
+}
+</script>
+</body>
+</html>
